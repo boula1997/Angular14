@@ -1,0 +1,69 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "fruits": [
+    {
+      "id": 3,
+      "name": "Chantale Nolan",
+      "price": 180,
+      "quantity": 322
+    },
+    {
+      "id": 4,
+      "name": "Amela Stevenson",
+      "price": 930,
+      "quantity": 397
+    },
+    {
+      "id": 5,
+      "name": "Lee Noel",
+      "price": 666,
+      "quantity": 814
+    },
+    {
+      "id": 6,
+      "name": "Flynn Eaton",
+      "price": 957,
+      "quantity": 525
+    },
+    {
+      "id": 7,
+      "name": "Carl Byrd",
+      "price": 710,
+      "quantity": 335
+    },
+    {
+      "id": 8,
+      "name": "Christian Case",
+      "price": 64,
+      "quantity": 117
+    },
+    {
+      "id": 9,
+      "name": "Lunea Atkins",
+      "price": 367,
+      "quantity": 135
+    },
+    {
+      "id": 10,
+      "name": "Raymond Shepherd",
+      "price": 860,
+      "quantity": 358
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
