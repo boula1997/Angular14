@@ -1,28 +1,27 @@
 import { Component, OnInit, Input, Output } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Fruits } from '../fruits';
-import { FruitsService } from '../fruits.service';
+// import { Fruits } from 'src/app/fruits/fruits';
+import { Posts } from '../posts';
+import { PostsService } from '../posts.service';
 
 @Component({
   selector: 'app-edit',
   templateUrl: './edit.component.html',
-  styleUrls: ['./edit.component.css'],
+  styleUrls: ['./edit.component.css']
 })
 export class EditComponent implements OnInit {
-  fruitForm: Fruits = {
+
+  postForm: Posts = {
     id: 0,
-    name: '',
-    price: 0,
-    quantity: 0,
+    title: '',
+    author: '',
   };
 
-  @Output() x = 50;
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private fruitService: FruitsService
-  ) {
-  }
+    private postService: PostsService,
+  ) { }
 
   ngOnInit(): void {
     this.route.paramMap.subscribe((param) => {
@@ -32,22 +31,19 @@ export class EditComponent implements OnInit {
   }
 
   getById(id: number) {
-    this.fruitService.getById(id).subscribe((data) => {
-      this.fruitForm = data;
-    });
+    this.postService.getById(id).subscribe((data) => { this.postForm = data; });
   }
 
   update() {
-    this.fruitService.update(this.fruitForm)
+    console.log('update');
+    this.postService.update(this.postForm)
       .subscribe({
         next: (data) => {
-          this.router.navigate(["/fruits/home"]);
-        },
-        error: (err) => {
+          this.router.navigate(["/posts/home"]);
+        }, error: (err) => {
           console.log(err);
         }
       })
   }
-
 
 }

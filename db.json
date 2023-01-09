@@ -4,38 +4,49 @@
       "id": 1,
       "title": "json-server",
       "author": "typicode"
-    }
-  ],
-  "fruits": [
+    },
+    {
+      "id": 2,
+      "title": "Candace Lindsey",
+      "author": 887
+    },
     {
       "id": 3,
-      "name": "Chantale Nolan",
-      "price": 180,
-      "quantity": 322
+      "title": "Randall Chandler",
+      "author": "700"
     },
     {
       "id": 4,
-      "name": "Amela Stevenson",
-      "price": 930,
-      "quantity": 397
+      "title": "Gregory Castaneda",
+      "author": 640
     },
     {
       "id": 5,
-      "name": "Lee Noel",
-      "price": 666,
-      "quantity": 814
+      "title": "Daphne Whitley",
+      "author": 561
     },
+    {
+      "id": 6,
+      "title": "Holmes Walton",
+      "author": "977"
+    },
+    {
+      "id": 7,
+      "title": "Isaiah Mckee",
+      "author": "481"
+    },
+    {
+      "id": 8,
+      "title": "Tarik Wiggins",
+      "author": "807"
+    }
+  ],
+  "fruits": [
     {
       "id": 6,
       "name": "Flynn Eaton",
       "price": 957,
       "quantity": 525
-    },
-    {
-      "id": 7,
-      "name": "Carl Byrd",
-      "price": 710,
-      "quantity": 335
     },
     {
       "id": 8,
@@ -51,9 +62,15 @@
     },
     {
       "id": 10,
-      "name": "Raymond Shepherd",
-      "price": 860,
-      "quantity": 358
+      "name": "Martena Roberts",
+      "price": 770,
+      "quantity": 766
+    },
+    {
+      "id": 11,
+      "name": "Allistair Estes",
+      "price": 280,
+      "quantity": 562
     }
   ],
   "comments": [

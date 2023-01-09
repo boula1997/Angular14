@@ -8,8 +8,7 @@ const routes: Routes = [
       path: '',
       redirectTo: 'fruits/home',
       pathMatch: 'full',
-    }
-    
+    }    
   ];
 
   @NgModule({
