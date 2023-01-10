@@ -6,7 +6,7 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
     {
       path: '',
-      redirectTo: 'fruits/home',
+      redirectTo: 'posts/home',
       pathMatch: 'full',
     }    
   ];
