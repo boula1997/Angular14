@@ -3,7 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 // import { Fruits } from 'src/app/fruits/fruits';
 import { Posts } from '../posts';
 import { PostsService } from '../posts.service';
-
+import { FormGroup, FormControl, Validators} from '@angular/forms';
 @Component({
   selector: 'app-edit',
   templateUrl: './edit.component.html',
@@ -11,11 +11,16 @@ import { PostsService } from '../posts.service';
 })
 export class EditComponent implements OnInit {
 
-  postForm: Posts = {
+  form:Posts={
     id: 0,
     title: '',
-    author: '',
+    author: ''
   };
+
+  postForm= new FormGroup({
+    title: new FormControl('', [Validators.required, Validators.minLength(3)]),
+    author: new FormControl('', Validators.required),
+  });
 
   constructor(
     private route: ActivatedRoute,
@@ -31,12 +36,12 @@ export class EditComponent implements OnInit {
   }
 
   getById(id: number) {
-    this.postService.getById(id).subscribe((data) => { this.postForm = data; });
+    this.postService.getById(id).subscribe((data) => { this.form = data; });
   }
 
   update() {
     console.log('update');
-    this.postService.update(this.postForm)
+    this.postService.update(this.form)
       .subscribe({
         next: (data) => {
           this.router.navigate(["/posts/home"]);
@@ -45,5 +50,10 @@ export class EditComponent implements OnInit {
         }
       })
   }
+
+  get f(){
+    return this.postForm.controls;
+  }
+  
 
 }

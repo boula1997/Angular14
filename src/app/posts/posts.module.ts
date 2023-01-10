@@ -5,7 +5,7 @@ import { PostsRoutingModule } from './posts-routing.module';
 import { CreateComponent } from './create/create.component';
 import { EditComponent } from './edit/edit.component';
 import { HomeComponent } from './home/home.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -18,7 +18,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     PostsRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class PostsModule { }
