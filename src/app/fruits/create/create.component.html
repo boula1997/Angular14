@@ -1,11 +1,12 @@
 <div class="container">
-    <legend>Create Item</legend>
-    <form [formGroup]="fruitForm" (ngSubmit)="submit()">
+    <legend>Update Item</legend>
+    <form [formGroup]="fruitForm" (ngSubmit)="create()">
         
       <div class="form-group">
           <label for="name">Name</label>
           <input 
               formControlName="name"
+              [(ngModel)] = "form.name" 
               id="name" 
               type="text" 
               class="form-control">
@@ -19,11 +20,13 @@
           <label for="price">Price</label>
           <input 
               formControlName="price"
+              [(ngModel)] = "form.price"
               id="price" 
               type="text" 
               class="form-control">
           <div *ngIf="f['price'].touched && f['price'].invalid" class="alert alert-danger">
               <div *ngIf="f['price'].errors && f['price'].errors['required']">Price is required.</div>
+              <div *ngIf="f['price'].errors && f['price'].errors['pattern']">Price must be a  number.</div>
           </div>
       </div>
        
@@ -31,12 +34,14 @@
           <label for="quantity">Quantity</label>
           <textarea 
               formControlName="quantity"
+              [(ngModel)] = "form.quantity"
               id="quantity" 
               type="text" 
               class="form-control">
           </textarea>
           <div *ngIf="f['quantity'].touched && f['quantity'].invalid" class="alert alert-danger">
               <div *ngIf="f['quantity'].errors && f['quantity'].errors['required']">Quantity is required.</div>
+              <div *ngIf="f['quantity'].errors && f['quantity'].errors['pattern']">Quantity must be a number.</div>
           </div>
       </div>
       

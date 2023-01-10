@@ -10,17 +10,17 @@ import { FormGroup, FormControl, Validators} from '@angular/forms';
   styleUrls: ['./create.component.css'],
 })
 export class CreateComponent implements OnInit {
-  // fruitForm: Fruits = {
-  //   id: 0,
-  //   name: '',
-  //   price: 0,
-  //   quantity: 0,
-  // };
+  form: Fruits = {
+    id: 0,
+    name: '',
+    price: 0,
+    quantity: 0,
+  };
 
   fruitForm= new FormGroup({
     name: new FormControl('', [Validators.required, Validators.minLength(3)]),
-    price: new FormControl('', [Validators.required]),
-    quantity: new FormControl('', Validators.required),
+    price: new FormControl('', [Validators.required,Validators.pattern('[0-9]*')]),
+    quantity: new FormControl('', [Validators.required,Validators.pattern('[0-9]*')]),
   });
 
 //  form: any;
@@ -30,25 +30,9 @@ export class CreateComponent implements OnInit {
 
   ngOnInit(): void { }
 
-  // create() {
-  //   this.fruitService.create(this.fruitForm)
-  //     .subscribe({
-  //       next: (data) => {
-  //         this.router.navigate(["/fruits/home"])
-  //       },
-  //       error: (err) => {
-  //         console.log(err);
-  //       }
-  //     })
-  // }
-
-  get f(){
-    return this.fruitForm.controls;
-  }
-  
-  submit(){
+  create() {
     console.log(this.fruitForm.value);
-    this.fruitService.create_form(this.fruitForm.value)
+    this.fruitService.create(this.form)
     .subscribe({
       next: (data) => {
         this.router.navigate(["/fruits/home"])
@@ -58,4 +42,9 @@ export class CreateComponent implements OnInit {
       }
     })
   }
+
+  get f(){
+    return this.fruitForm.controls;
+  }
+  
 }

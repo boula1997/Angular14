@@ -2,21 +2,27 @@ import { Component, OnInit, Input, Output } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Fruits } from '../fruits';
 import { FruitsService } from '../fruits.service';
-
+import { FormGroup, FormControl, Validators} from '@angular/forms';
 @Component({
   selector: 'app-edit',
   templateUrl: './edit.component.html',
   styleUrls: ['./edit.component.css'],
 })
 export class EditComponent implements OnInit {
-  fruitForm: Fruits = {
+  form: Fruits = {
     id: 0,
     name: '',
     price: 0,
     quantity: 0,
   };
 
-  @Output() x = 50;
+  fruitForm= new FormGroup({
+    name: new FormControl('', [Validators.required, Validators.minLength(3)]),
+    price: new FormControl('', [Validators.required,Validators.pattern('[0-9]*')]),
+    quantity: new FormControl('', [Validators.required,Validators.pattern('[0-9]*')]),
+  });
+
+  // @Output() x = 50;
   constructor(
     private route: ActivatedRoute,
     private router: Router,
@@ -33,12 +39,12 @@ export class EditComponent implements OnInit {
 
   getById(id: number) {
     this.fruitService.getById(id).subscribe((data) => {
-      this.fruitForm = data;
+      this.form = data;
     });
   }
 
   update() {
-    this.fruitService.update(this.fruitForm)
+    this.fruitService.update(this.form)
       .subscribe({
         next: (data) => {
           this.router.navigate(["/fruits/home"]);
@@ -48,6 +54,11 @@ export class EditComponent implements OnInit {
         }
       })
   }
+
+  get f(){
+    return this.fruitForm.controls;
+  }
+  
 
 
 }
