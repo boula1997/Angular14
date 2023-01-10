@@ -7,58 +7,8 @@
     },
     {
       "id": 2,
-      "title": "Candace Lindsey",
-      "author": 887
-    },
-    {
-      "id": 3,
-      "title": "Randall Chandler",
-      "author": "700"
-    },
-    {
-      "id": 4,
-      "title": "Gregory Castaneda",
-      "author": 640
-    },
-    {
-      "id": 5,
-      "title": "Daphne Whitley",
-      "author": 561
-    },
-    {
-      "id": 6,
-      "title": "Holmes Walton",
-      "author": "3w4gt3q5hgr4"
-    },
-    {
-      "id": 7,
-      "title": "Isaiah Mckee",
-      "author": "481"
-    },
-    {
-      "id": 8,
-      "title": "Tarik Wiggins",
-      "author": "807"
-    },
-    {
-      "id": 9,
-      "title": "Demetria Whitley",
-      "author": "363"
-    },
-    {
-      "id": 10,
-      "title": "Liberty Pate",
-      "author": "909"
-    },
-    {
-      "id": 11,
-      "title": "Quas laboriosam est",
-      "author": "Consequuntur quis en"
-    },
-    {
-      "id": 12,
-      "title": "Qui ut cupiditate ve",
-      "author": "Sunt et autem quide"
+      "title": "Laravel totourial",
+      "author": "Boula Nessim"
     }
   ],
   "fruits": [

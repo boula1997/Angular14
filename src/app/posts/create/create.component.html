@@ -26,6 +26,7 @@
             class="form-control">
         <div *ngIf="f['author'].touched && f['author'].invalid" class="alert alert-danger">
             <div *ngIf="f['author'].errors && f['author'].errors['required']">Author is required.</div>
+            <div *ngIf="f['author'].errors && f['author'].errors['minlength']">Author should be 3 character.</div>
         </div>
     </div>
     

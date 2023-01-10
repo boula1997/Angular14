@@ -19,7 +19,7 @@ export class EditComponent implements OnInit {
 
   postForm= new FormGroup({
     title: new FormControl('', [Validators.required, Validators.minLength(3)]),
-    author: new FormControl('', Validators.required),
+    author: new FormControl('', [Validators.required, Validators.minLength(3)]),
   });
 
   constructor(

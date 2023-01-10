@@ -18,7 +18,7 @@ export class CreateComponent implements OnInit {
 
   postForm= new FormGroup({
     title: new FormControl('', [Validators.required, Validators.minLength(3)]),
-    author: new FormControl('', Validators.required),
+    author: new FormControl('', [Validators.required, Validators.minLength(3)]),
   });
 
   constructor(private postService:PostsService,private router:Router) { }
