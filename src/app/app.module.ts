@@ -10,6 +10,7 @@ import { PostsModule } from './posts/posts.module';
 
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -25,9 +26,9 @@ import { AppRoutingModule } from './app-routing.module';
     FruitsModule,
     PostsRoutingModule,
     PostsModule,
-    HttpClientModule
-    
-
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
     
   ],
   providers: [],

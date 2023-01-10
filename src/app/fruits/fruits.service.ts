@@ -16,6 +16,10 @@ export class FruitsService {
     return this.http.post<Fruits>('http://localhost:3000/fruits', payload);
   }
 
+  create_form(payload: any) {
+    return this.http.post<any>('http://localhost:3000/fruits', payload);
+  }
+
   getById(id: number) {
     return this.http.get<Fruits>(`http://localhost:3000/fruits/${id}`);
    }

@@ -4,8 +4,9 @@ import { CommonModule } from '@angular/common';
 import { FruitsRoutingModule } from './fruits-routing.module';
 import { HomeComponent } from './home/home.component';
 import { CreateComponent } from './create/create.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EditComponent } from './edit/edit.component';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { EditComponent } from './edit/edit.component';
   imports: [
     CommonModule,
     FruitsRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class FruitsModule { }
