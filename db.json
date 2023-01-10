@@ -6,19 +6,24 @@
       "author": "typicode"
     },
     {
-      "id": 4,
-      "title": "Vel et quisquam repr",
-      "author": "Eu odit itaque exerc"
-    },
-    {
       "id": 5,
       "title": "Sunt rerum consequa",
       "author": "Aute omnis consequat"
     },
     {
       "id": 6,
-      "title": "Quam consectetur do",
-      "author": "Sed repudiandae sit"
+      "title": "Debitis quis consequ",
+      "author": "Quas autem nemo volu"
+    },
+    {
+      "id": 7,
+      "title": "Aut ipsum vero fugi",
+      "author": "Aperiam corporis sus"
+    },
+    {
+      "id": 8,
+      "title": "Ut quis voluptatem ",
+      "author": "Ratione et expedita "
     }
   ],
   "fruits": [
@@ -57,12 +62,6 @@
       "name": "Cathleen Burns",
       "price": "122",
       "quantity": "44"
-    },
-    {
-      "id": 13,
-      "name": "Cassidy Trevino",
-      "price": "303",
-      "quantity": "666"
     }
   ],
   "comments": [
