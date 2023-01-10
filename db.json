@@ -6,9 +6,9 @@
       "author": "typicode"
     },
     {
-      "id": 2,
-      "title": "Laravel totourial",
-      "author": "Boula Nessim"
+      "id": 4,
+      "title": "Vel et quisquam repr",
+      "author": "Eu odit itaque exerc"
     }
   ],
   "fruits": [
@@ -52,7 +52,7 @@
       "id": 13,
       "name": "Cassidy Trevino",
       "price": "303",
-      "quantity": "44"
+      "quantity": "666"
     }
   ],
   "comments": [

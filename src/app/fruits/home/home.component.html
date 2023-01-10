@@ -38,8 +38,8 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let item of allFruits">
-        <th scope="row">{{ item.id }}</th>
+      <tr *ngFor="let item of allFruits; let indexOfelement=index;">
+        <th scope="row">{{ indexOfelement }}</th>
         <td>{{ item.name }}</td>
         <td>{{ item.quantity }}</td>
         <td>{{ item.price }}</td>
