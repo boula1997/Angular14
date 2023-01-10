@@ -18,9 +18,8 @@ export class CreateComponent implements OnInit {
   // };
 
   fruitForm= new FormGroup({
-    id: new FormControl(90),
     name: new FormControl('', [Validators.required, Validators.minLength(3)]),
-    price: new FormControl('', Validators.required),
+    price: new FormControl('', [Validators.required]),
     quantity: new FormControl('', Validators.required),
   });
 
