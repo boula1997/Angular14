@@ -24,14 +24,19 @@
       "id": 8,
       "title": "Ut quis voluptatem ",
       "author": "Ratione et expedita "
+    },
+    {
+      "id": 9,
+      "title": "Dicta et culpa recu",
+      "author": "Amet anim voluptate"
     }
   ],
   "fruits": [
     {
       "id": 6,
-      "name": "Flynn Eaton",
-      "price": 957,
-      "quantity": 525
+      "name": "Maite Phillips",
+      "price": "710",
+      "quantity": 604
     },
     {
       "id": 8,
@@ -62,6 +67,18 @@
       "name": "Cathleen Burns",
       "price": "122",
       "quantity": "44"
+    },
+    {
+      "id": 13,
+      "name": "Jaquelyn Casey",
+      "price": "877",
+      "quantity": "99"
+    },
+    {
+      "id": 14,
+      "name": "Yuli Silva",
+      "price": "445",
+      "quantity": "55"
     }
   ],
   "comments": [

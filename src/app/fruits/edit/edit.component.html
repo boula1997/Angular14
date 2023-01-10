@@ -32,13 +32,12 @@
      
     <div class="form-group">
         <label for="quantity">Quantity</label>
-        <textarea 
+        <input 
             formControlName="quantity"
             [(ngModel)] = "form.quantity"
             id="quantity" 
-            type="text" 
+            type="number" 
             class="form-control">
-        </textarea>
         <div *ngIf="f['quantity'].touched && f['quantity'].invalid" class="alert alert-danger">
             <div *ngIf="f['quantity'].errors && f['quantity'].errors['required']">Quantity is required.</div>
             <div *ngIf="f['quantity'].errors && f['quantity'].errors['pattern']">Quantity must be a number.</div>
