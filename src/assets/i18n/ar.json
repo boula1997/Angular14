@@ -6,7 +6,7 @@
     "fruits": "الفواكه",
     "posts": "المنشورات",
     "title": "اللقب",
-    "author": "الممؤلف",
+    "author": "المؤلف",
     "edit": "تعديل",
     "delete": "ازالة",
     "submit": "اضافة",
@@ -22,7 +22,11 @@
     "price_required": "السعر مطلوب.",
     "quantity_number": "الكمية يجب ان تكون رقما.",
     "name_character": "الاسم يحب ان يكون 3 حروف او اكثر.",
-    "price_number": "السعر يجب ان يكون رقما"
+    "price_number": "السعر يجب ان يكون رقما",
+    "title_required": "اللقب مطلوب",
+    "author_required": "المؤلف مطلوب",
+    "title_character": "اللقب يحب ان يكون 3 حروف او اكثر.",
+    "author_character": "المؤلف يحب ان يكون 3 حروف او اكثر."
 
 
 }

@@ -3,15 +3,15 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Warning!</h5>
+          <h5 class="modal-title" id="exampleModalLabel">{{ 'warning' | translate }}</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          Are you sure to delete the item?
+          {{ 'sure' | translate }}
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-danger" (click)="delete()">Confirm Delete</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ 'close' | translate }}</button>
+          <button type="button" class="btn btn-danger" (click)="delete()">{{ 'confirm_delete' | translate }}</button>
         </div>
       </div>
     </div>
@@ -21,7 +21,7 @@
     <div class="container">
       <div class="row mt-2">
         <div class="col col-md-12 offset-md-12">
-          <a class="btn btn-success" routerLink="/posts/create">Create</a>
+          <a class="btn btn-success" routerLink="/posts/create">{{ 'create' | translate }}</a>
         </div>
       </div>
       <table class="table">
@@ -32,8 +32,8 @@
       <thead>
         <tr>
           <th scope="col">#</th>
-          <th scope="col">Title</th>
-          <th scope="col">Author</th>
+          <th scope="col">{{ 'title' | translate }}</th>
+          <th scope="col">{{ 'author' | translate }}</th>
         </tr>
       </thead>
       <tbody>
@@ -42,10 +42,10 @@
           <td>{{ item.title }}</td>
           <td>{{ item.author }}</td>
           <td>
-            <a class="btn btn-primary" [routerLink]="['/posts/edit', item.id]">Edit</a>
+            <a class="btn btn-primary" [routerLink]="['/posts/edit', item.id]">{{ 'edit' | translate }}</a>
           </td>
           <td>
-            <button type="button" (click)="openDeleteModal(item.id)" class="btn btn-danger">Delete</button>
+            <button type="button" (click)="openDeleteModal(item.id)" class="btn btn-danger">{{ 'delete' | translate }}</button>
           </td>
         </tr>
       </tbody>
