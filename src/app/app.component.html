@@ -1,11 +1,10 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
   <div class="container-fluid">
-    <a class="navbar-brand text-dark">Dashboard</a>
+    <a class="navbar-brand text-dark">{{ 'dashboard' | translate  }}</a>
   </div>
 
   <div class="container align-items-center justify-content-center">
-    <a class="navbar-brand text-dark active" routerLink="/fruits/home" routerLinkActive="active"
-     >Fruits</a>
+    <a class="navbar-brand text-dark active" routerLink="/fruits/home" routerLinkActive="active">Fruits</a>
     <a class="navbar-brand text-dark" routerLink="/posts/home" routerLinkActive="active">Posts</a>
   </div>
 </nav>

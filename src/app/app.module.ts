@@ -8,10 +8,16 @@ import { FruitsModule } from './fruits/fruits.module';
 import { PostsRoutingModule } from './posts/posts-routing.module';
 import { PostsModule } from './posts/posts.module';
 
-import { HttpClientModule } from '@angular/common/http';
+import {HttpClientModule, HttpClient} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 
+// AoT requires an exported function for factories
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 
 
 
@@ -28,7 +34,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     PostsModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    TranslateModule.forRoot({
+      defaultLanguage: 'en',
+      loader: {
+          provide: TranslateLoader,
+          useFactory: HttpLoaderFactory,
+          deps: [HttpClient]
+      }
+  })
     
   ],
   providers: [],

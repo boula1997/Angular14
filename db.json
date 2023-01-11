@@ -74,12 +74,6 @@
       "quantity": "44"
     },
     {
-      "id": 13,
-      "name": "Jaquelyn Casey",
-      "price": "877",
-      "quantity": "99"
-    },
-    {
       "id": 14,
       "name": "Yuli Silva",
       "price": "445",
@@ -90,6 +84,18 @@
       "name": "Samantha Brewer",
       "price": "62",
       "quantity": 535
+    },
+    {
+      "id": 16,
+      "name": "April Vinson",
+      "price": "895",
+      "quantity": 195
+    },
+    {
+      "id": 17,
+      "name": "Ahmed Logan",
+      "price": "541",
+      "quantity": 3
     }
   ],
   "comments": [
