@@ -1,5 +1,17 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
   <div class="container-fluid">
+    <span class="form-inline">
+      <select 
+          class="form-control" 
+          #selectedLang 
+          (change)="switchLang(selectedLang.value)">
+        <option *ngFor="let language of translate.getLangs()" 
+          [value]="language"
+          [selected]="language === translate.currentLang">
+          {{ language }}
+        </option>
+      </select>
+    </span>
     <a class="navbar-brand text-dark">{{ 'dashboard' | translate  }}</a>
   </div>
 

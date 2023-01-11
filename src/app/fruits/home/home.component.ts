@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { Fruits } from '../fruits';
 import { FruitsService } from '../fruits.service';
  
@@ -14,7 +15,8 @@ export class HomeComponent implements OnInit {
   deleteModal: any;
   idTodelete: number = 0;
  
-  constructor(private fruitService: FruitsService) {}
+  constructor(private fruitService: FruitsService, private translate: TranslateService) {
+  }
  
   ngOnInit(): void {
     this.deleteModal = new window.bootstrap.Modal(

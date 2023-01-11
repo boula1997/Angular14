@@ -1,3 +1,10 @@
 {
-    "dashboard": "Dashboard"
+    "dashboard": "Dashboard",
+    "name": "Name",
+    "quantity": "Quantity",
+    "price": "Price",
+    "fruits": "Fruits",
+    "posts": "Posts",
+    "title": "Title",
+    "author": "Author"
 }
