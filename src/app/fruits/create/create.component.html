@@ -1,9 +1,9 @@
 <div class="container">
-    <legend>Update Item</legend>
+    <legend>{{ 'create_item' | translate }}</legend>
     <form [formGroup]="fruitForm" (ngSubmit)="create()">
         
       <div class="form-group">
-          <label for="name">Name</label>
+          <label for="name">{{ 'name' | translate }}</label>
           <input 
               formControlName="name"
               [(ngModel)] = "form.name" 
@@ -11,13 +11,13 @@
               type="text" 
               class="form-control">
           <div *ngIf="f['name'].touched && f['name'].invalid" class="alert alert-danger">
-              <div *ngIf="f['name'].errors && f['name'].errors['required']">Name is required.</div>
-              <div *ngIf="f['name'].errors && f['name'].errors['minlength']">Name should be 3 character.</div>
+              <div *ngIf="f['name'].errors && f['name'].errors['required']">{{ 'name_required' | translate }}</div>
+              <div *ngIf="f['name'].errors && f['name'].errors['minlength']">{{ 'name_character' | translate }}</div>
           </div>
       </div>
        
       <div class="form-group">
-          <label for="price">Price</label>
+          <label for="price">{{ 'price' | translate }}</label>
           <input 
               formControlName="price"
               [(ngModel)] = "form.price"
@@ -25,13 +25,13 @@
               type="text" 
               class="form-control">
           <div *ngIf="f['price'].touched && f['price'].invalid" class="alert alert-danger">
-              <div *ngIf="f['price'].errors && f['price'].errors['required']">Price is required.</div>
-              <div *ngIf="f['price'].errors && f['price'].errors['pattern']">Price must be a  number.</div>
+              <div *ngIf="f['price'].errors && f['price'].errors['required']">{{ 'price_required' | translate }}</div>
+              <div *ngIf="f['price'].errors && f['price'].errors['pattern']">{{ 'price_number' | translate }}</div>
           </div>
       </div>
        
       <div class="form-group">
-          <label for="quantity">Quantity</label>
+          <label for="quantity">{{ 'quantity' | translate }}</label>
           <input 
               formControlName="quantity"
               [(ngModel)] = "form.quantity"
@@ -39,13 +39,13 @@
               type="number" 
               class="form-control">
           <div *ngIf="f['quantity'].touched && f['quantity'].invalid" class="alert alert-danger">
-              <div *ngIf="f['quantity'].errors && f['quantity'].errors['required']">Quantity is required.</div>
-              <div *ngIf="f['quantity'].errors && f['quantity'].errors['pattern']">Quantity must be a number.</div>
+              <div *ngIf="f['quantity'].errors && f['quantity'].errors['required']">{{ 'quantity_required' | translate }}</div>
+              <div *ngIf="f['quantity'].errors && f['quantity'].errors['pattern']">{{ 'quantity_number' | translate }}</div>
           </div>
       </div>
       
       <div class="pt-2">
-        <button class="btn btn-primary" [disabled]="fruitForm.invalid" type="submit">Submit</button>
+        <button class="btn btn-primary" [disabled]="fruitForm.invalid" type="submit">{{ 'submit' | translate }}</button>
       </div>
   </form>
   </div>

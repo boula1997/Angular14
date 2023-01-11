@@ -6,5 +6,21 @@
     "fruits": "Fruits",
     "posts": "Posts",
     "title": "Title",
-    "author": "Author"
+    "author": "Author",
+    "edit": "Edit",
+    "delete": "Delete",
+    "submit": "Submit",
+    "warning": "Warning!",
+    "sure": "Are you sure to delete the item?",
+    "close": "Close",
+    "confirm_delete": "Confirm Delete",
+    "create": "Create",
+    "edit_item": "Edit Item",
+    "create_item": "Create Item",
+    "quantity_required": "Quantity is required.",
+    "name_required": "Name is required.",
+    "price_required": "Price is required.",
+    "quantity_number": "Quantity must be a number.",
+    "name_character": "Name should be 3 character.",
+    "price_number": "Price must be a number."
 }

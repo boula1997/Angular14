@@ -6,5 +6,23 @@
     "fruits": "الفواكه",
     "posts": "المنشورات",
     "title": "اللقب",
-    "author": "الممؤلف"
+    "author": "الممؤلف",
+    "edit": "تعديل",
+    "delete": "ازالة",
+    "submit": "اضافة",
+    "warning": "تحذير!",
+    "sure": "مناكد انك تريد ازالة هذا العنصر؟",
+    "close": "اغلاق",
+    "confirm_delete": "تاكيد الازالة",
+    "create": "انشاء",
+    "edit_item": "تعديل العنصر",
+    "create_item": "اضافة عنصر",
+    "quantity_required": "الكمية مطلوبة.",
+    "name_required": "الاسم مطلوب.",
+    "price_required": "السعر مطلوب.",
+    "quantity_number": "الكمية يجب ان تكون رقما.",
+    "name_character": "الاسم يحب ان يكون 3 حروف او اكثر.",
+    "price_number": "السعر يجب ان يكون رقما"
+
+
 }
