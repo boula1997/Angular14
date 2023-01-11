@@ -14,7 +14,7 @@ export class AppComponent {
         // this language will be used as a fallback when a translation isn't found in the current language
         translate.addLangs(['en', 'ar']);
         translate.setDefaultLang('en');
-
+        document.getElementsByTagName("html")[0].setAttribute("lang", this.translate.getDefaultLang());
 
          // the lang to use, if the lang isn't available, it will use the current loader to get them
         // translate.use('en');
@@ -22,6 +22,12 @@ export class AppComponent {
 
     switchLang(lang: string) {
       this.translate.use(lang);
+      if (lang === 'ar') {
+        document.getElementsByTagName("html")[0].setAttribute("dir", "rtl");
+      }
+      else {
+        document.getElementsByTagName("html")[0].setAttribute("dir", "ltr");
+      }
     }
 
 

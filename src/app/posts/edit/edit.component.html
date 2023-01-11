@@ -3,7 +3,7 @@
   <form [formGroup]="postForm" (ngSubmit)="update()">
       
     <div class="form-group">
-        <label for="title">Title</label>
+        <label for="title">{{ 'title' | translate }}</label>
         <input 
             formControlName="title"
             [(ngModel)] = "form.title" 

@@ -16,8 +16,8 @@
   </div>
 
   <div class="container align-items-center justify-content-center">
-    <a class="navbar-brand text-dark active" routerLink="/fruits/home" routerLinkActive="active">{{ 'fruits' | translate }}</a>
-    <a class="navbar-brand text-dark" routerLink="/posts/home" routerLinkActive="active">{{ 'posts' | translate }}</a>
+    <a class="navbar-brand text-dark" routerLink="/fruits/home" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">{{ 'fruits' | translate }}</a>
+    <a class="navbar-brand text-dark" routerLink="/posts/home" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">{{ 'posts' | translate }}</a>
   </div>
 </nav>
 <router-outlet></router-outlet>
