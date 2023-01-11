@@ -2,33 +2,8 @@
   "posts": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    },
-    {
-      "id": 5,
-      "title": "Sunt rerum consequa",
-      "author": "Aute omnis consequat"
-    },
-    {
-      "id": 6,
-      "title": "Debitis quis consequ",
-      "author": "Quas autem nemo volu"
-    },
-    {
-      "id": 7,
-      "title": "Aut ipsum vero fugi",
-      "author": "Aperiam corporis sus"
-    },
-    {
-      "id": 8,
-      "title": "Ut quis voluptatem ",
-      "author": "Ratione et expedita "
-    },
-    {
-      "id": 9,
-      "title": "Dicta et culpa recu",
-      "author": "Amet anim voluptate"
+      "title": "Blanditiis corporis ",
+      "author": "Quibusdam ipsa dict"
     }
   ],
   "fruits": [
@@ -39,58 +14,16 @@
       "quantity": 604
     },
     {
+      "id": 7,
+      "name": "Keith Paul",
+      "price": "133",
+      "quantity": 310
+    },
+    {
       "id": 8,
-      "name": "Christian Case",
-      "price": 64,
-      "quantity": 117
-    },
-    {
-      "id": 9,
-      "name": "Lunea Atkins",
-      "price": 367,
-      "quantity": 135
-    },
-    {
-      "id": 10,
-      "name": "Martena Roberts",
-      "price": "400",
-      "quantity": "800"
-    },
-    {
-      "id": 11,
-      "name": "Noble Wheeler",
-      "price": "480",
-      "quantity": "44"
-    },
-    {
-      "id": 12,
-      "name": "Cathleen Burns",
-      "price": "122",
-      "quantity": "44"
-    },
-    {
-      "id": 14,
-      "name": "Yuli Silva",
-      "price": "445",
-      "quantity": "55"
-    },
-    {
-      "id": 15,
-      "name": "Samantha Brewer",
-      "price": "62",
-      "quantity": 535
-    },
-    {
-      "id": 16,
-      "name": "April Vinson",
-      "price": "895",
-      "quantity": 195
-    },
-    {
-      "id": 17,
-      "name": "2q3re23",
-      "price": "57",
-      "quantity": 65
+      "name": "Keith Paul",
+      "price": "133",
+      "quantity": 310
     }
   ],
   "comments": [
