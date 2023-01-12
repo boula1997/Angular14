@@ -19,7 +19,10 @@ export class FruitsService {
   }
 
   getById(id: number) {
-    return this.http.get<any>(`http://localhost:3000/fruits/${id}`);
+    // return this.http.get<any>(`http://localhost:3000/fruits/${id}`);
+    console.log(id);
+    
+    return this.http.get<any>(`http://127.0.0.1:8000/api/fruit/${id}?lang=ar`);
    }
     
    update(payload:any){

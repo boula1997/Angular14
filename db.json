@@ -2,13 +2,18 @@
   "posts": [
     {
       "id": 1,
-      "title": "Blanditiis corporis ",
-      "author": "Quibusdam ipsa dict"
+      "title": "Reiciendis amet mol",
+      "author": "Dolores est ipsa et"
     },
     {
       "id": 2,
-      "title": "Esse quibusdam fugi",
-      "author": "Est ipsum et amet"
+      "title": "Corporis odit tempor",
+      "author": "Nostrud cupidatat ut"
+    },
+    {
+      "id": 3,
+      "title": "Qui iste quidem dele",
+      "author": "Proident quae exerc"
     }
   ],
   "fruits": [
@@ -37,13 +42,7 @@
       "quantity": 89
     }
   ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
+  "comments": [],
   "profile": {
     "name": "typicode"
   }

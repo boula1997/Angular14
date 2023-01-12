@@ -31,7 +31,6 @@ export class CreateComponent implements OnInit {
   ngOnInit(): void { }
 
   create() {
-    console.log(this.fruitForm.value);
     this.fruitService.create(this.form)
     .subscribe({
       next: (data) => {
