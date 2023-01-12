@@ -11,11 +11,11 @@ declare var window: any;
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  allFruits: Fruits[] = [];
   deleteModal: any;
   idTodelete: number = 0;
+
  
-  constructor(private fruitService: FruitsService) {
+  constructor(public _fruitService: FruitsService) {
     this.get(AppComponent.appLang);
   }
  
@@ -29,8 +29,8 @@ export class HomeComponent implements OnInit {
   }
  
   get(lang: string) {
-    this.fruitService.get(lang).subscribe((data) => {
-      this.allFruits = data.data.fruits;
+      this._fruitService.get(lang).subscribe((data) => {
+      this._fruitService.allFruits = data.data.fruits;
     });
   }
  
@@ -40,9 +40,9 @@ export class HomeComponent implements OnInit {
   }
  
   delete() {
-    this.fruitService.delete(this.idTodelete).subscribe({
+    this._fruitService.delete(this.idTodelete).subscribe({
       next: (data) => {
-        this.allFruits = this.allFruits.filter(_ => _.id != this.idTodelete)
+        this._fruitService.allFruits = this._fruitService.allFruits .filter(_ => _.id != this.idTodelete)
         this.deleteModal.hide();
       },
     });

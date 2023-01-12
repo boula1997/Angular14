@@ -8,6 +8,8 @@ import { Observable } from 'rxjs';
 export class FruitsService {
   constructor(private http: HttpClient) {}
 
+  allFruits: Fruits[] = [];
+
   get(lang:string):Observable<any>  {
     return this.http.get<any>('http://127.0.0.1:8000/api/fruits?lang='+lang);
   }
