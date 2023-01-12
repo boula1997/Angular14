@@ -1,5 +1,6 @@
 .active{
-    background: blueviolet;
+    background: rgb(43, 116, 226);
     color: white !important;
-    border-radius: 10px;
+    border-radius: 13px;
+    padding: 6px;
 }
