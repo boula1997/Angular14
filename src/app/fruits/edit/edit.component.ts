@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Fruits } from '../fruits';
 import { FruitsService } from '../fruits.service';
 import { FormGroup, FormControl, Validators} from '@angular/forms';
+import { AppComponent } from 'src/app/app.component';
 @Component({
   selector: 'app-edit',
   templateUrl: './edit.component.html',
@@ -39,7 +40,7 @@ export class EditComponent implements OnInit {
   }
 
   getById(id: number) {
-    this.fruitService.getById(id).subscribe((data) => {
+    this.fruitService.getById(id , AppComponent.appLang).subscribe((data) => {
       this.form = data.data.fruit;
     });
   }

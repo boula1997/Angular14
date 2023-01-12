@@ -18,11 +18,11 @@ export class FruitsService {
     return this.http.post<any>('http://localhost:3000/fruits', payload);
   }
 
-  getById(id: number) {
+  getById(id: number , lang:string) {
     // return this.http.get<any>(`http://localhost:3000/fruits/${id}`);
     console.log(id);
     
-    return this.http.get<any>(`http://127.0.0.1:8000/api/fruit/${id}?lang=ar`);
+    return this.http.get<any>(`http://127.0.0.1:8000/api/fruit/${id}?lang=${lang}`);
    }
     
    update(payload:any){
