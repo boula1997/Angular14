@@ -20,7 +20,7 @@ export class AppComponent {
          // the lang to use, if the lang isn't available, it will use the current loader to get them
         // translate.use('en');
     }
-    public static appLang:string='ar';
+    public static appLang:string='en';
 
     switchLang(lang: string) {
 
