@@ -8,6 +8,7 @@ import {TranslateService} from '@ngx-translate/core';
 })
 export class AppComponent {
   title = 'Angular_CRUD';
+  
 
 
     constructor(public translate: TranslateService) {
@@ -19,9 +20,13 @@ export class AppComponent {
          // the lang to use, if the lang isn't available, it will use the current loader to get them
         // translate.use('en');
     }
+    public static appLang:string='ar';
 
     switchLang(lang: string) {
+
+      AppComponent.appLang=lang;
       this.translate.use(lang);
+      
       if (lang === 'ar') {
         document.getElementsByTagName("html")[0].setAttribute("dir", "rtl");
       }

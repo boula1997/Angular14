@@ -8,8 +8,8 @@ import { Observable } from 'rxjs';
 export class FruitsService {
   constructor(private http: HttpClient) {}
 
-  get():Observable<any>  {
-    return this.http.get<any>('http://127.0.0.1:8000/api/fruits?lang=ar');
+  get(lang:string):Observable<any>  {
+    return this.http.get<any>('http://127.0.0.1:8000/api/fruits?lang='+lang);
   }
 
   create(payload: any) {

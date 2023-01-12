@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { AppComponent } from 'src/app/app.component';
 import { Fruits } from '../fruits';
 import { FruitsService } from '../fruits.service';
  
@@ -15,7 +15,8 @@ export class HomeComponent implements OnInit {
   deleteModal: any;
   idTodelete: number = 0;
  
-  constructor(private fruitService: FruitsService, private translate: TranslateService) {
+  constructor(private fruitService: FruitsService) {
+    this.get(AppComponent.appLang);
   }
  
   ngOnInit(): void {
@@ -23,11 +24,12 @@ export class HomeComponent implements OnInit {
       document.getElementById('deleteModal')
     );
  
-    this.get();
+    
+    
   }
  
-  get() {
-    this.fruitService.get().subscribe((data) => {
+  get(lang: string) {
+    this.fruitService.get(lang).subscribe((data) => {
       this.allFruits = data.data.fruits;
     });
   }
