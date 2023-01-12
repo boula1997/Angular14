@@ -9,7 +9,7 @@ export class FruitsService {
   constructor(private http: HttpClient) {}
 
   get():Observable<any>  {
-    return this.http.get<any>('http://localhost:3000/fruits');
+    return this.http.get<any>('http://127.0.0.1:8000/api/fruits?lang=ar');
   }
 
   create(payload: any) {

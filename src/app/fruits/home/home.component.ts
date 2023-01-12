@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
  
   get() {
     this.fruitService.get().subscribe((data) => {
-      this.allFruits = data;
+      this.allFruits = data.data.fruits;
     });
   }
  
